@@ -1,0 +1,52 @@
+:root {
+    --color-light-blue: #00E0FF;
+    --color-dark-purple: #1A0D52;
+    --color-bright-purple: #5200FF;
+    --color-black: #000;
+    --color-darker-purple: #321F78;
+    --color-dark: #1E1E1E;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'Aron-Regular', sans-serif;
+background-color: var(--color-dark);
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+li {
+    list-style: none;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    line-height: 1;
+}
+@font-face {
+    font-family: 'AtomicAge';
+    src: url(../font/AtomicAge-Regular.ttf);
+}
+@font-face {
+    font-family: 'Aron-Medium';
+    src: url(../font/Aron-Medium-BF6556dd3de404f.ttf);
+}
+@font-face {
+    font-family: 'Aron-Regular';
+    src: url(../font/Aron-Regular-BF6556dd3e538a2.ttf);
+}
+@font-face {
+    font-family: 'Aron-Bold';
+    src: url(../font/Aron-Bold-BF6556dd3e559a6.ttf);
+}
+@font-face {
+    font-family: 'Aron-Normal';
+    src: url(../font/Aron-Normal-BF6556dd3e136df.ttf);
+}
