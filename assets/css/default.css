@@ -4,13 +4,16 @@
     --color-bright-purple: #5200FF;
     --color-black: #000;
     --color-darker-purple: #321F78;
-    --color-dark: #1E1E1E;
+    --color-dark: #070824;
 }
 .bg-brightPurple{
 background-color: var(--color-bright-purple);
 }
 .border-brightPurple{
     border: 1px solid  var(--color-bright-purple) !important;
+}
+.text-light-blue{
+    color: var(--color-light-blue) !important;
 }
 *{
     margin: 0;
@@ -20,6 +23,7 @@ background-color: var(--color-bright-purple);
 body{
 font-family: 'Aron-Regular', sans-serif;
 background-color: var(--color-dark);
+color: #fff;
 }
 a {
     text-decoration: none;
@@ -36,6 +40,33 @@ li {
     font-size: 14px;
     color: #fff;
     line-height: 1;
+}
+.main-section{
+    padding: 100px 0;
+}
+p {
+    font-family: 'Aron-light';
+}
+h1{
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+h1 span:first-child{
+    font-weight: 300;
+}
+h3 {
+    font-size: 60px;
+    line-height: 1;
+    margin: 0;
+    font-weight: bold;
+}
+h6{
+    color: var(--color-light-blue);
+    font-family: 'Aron-Normal';
+}
+.slick-track {
+    transition-timing-function: linear !important;
 }
 @font-face {
     font-family: 'AtomicAge';
@@ -56,4 +87,8 @@ li {
 @font-face {
     font-family: 'Aron-Normal';
     src: url(../font/Aron-Normal-BF6556dd3e136df.ttf);
+}
+@font-face {
+    font-family: 'Aron-light';
+    src: url(../font/Aron-Light-BF6556dd3ded53e.ttf);
 }
