@@ -1,14 +1,11 @@
-header, nav{
+header{
     background-image: url(../img/headerbg.png);
     background-size: cover;
     position: relative;
+    padding: 4px 0;
     background-repeat: no-repeat;
 }
-html body header nav {
-    background-image: url(../img/navbg.svg);
-    padding: 15px;
 
-}
 header::before {
     content: '';
     position: absolute;
@@ -21,6 +18,18 @@ header::before {
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+header ul {
+    z-index: 999999;
+    position: relative;
+}
+header svg {
+    width: 63vw;
+    height: 9.1vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -3.6vw;
 }
 header .container-fluid {
     z-index: 9999999999999;

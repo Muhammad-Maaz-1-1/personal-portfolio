@@ -6,6 +6,12 @@
     --color-darker-purple: #321F78;
     --color-dark: #1E1E1E;
 }
+.bg-brightPurple{
+background-color: var(--color-bright-purple);
+}
+.border-brightPurple{
+    border: 1px solid  var(--color-bright-purple) !important;
+}
 *{
     margin: 0;
     padding: 0;
@@ -24,9 +30,10 @@ li {
 }
 
 .btn {
-    padding: 12px 20px;
+    padding: 12px 22px;
     border: 1px solid #fff;
     border-radius: 100px;
+    font-size: 14px;
     color: #fff;
     line-height: 1;
 }
