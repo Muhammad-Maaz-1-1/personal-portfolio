@@ -18,45 +18,33 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>personal portfolio</title>
   </head>
   <body>
     <header>
-      <div class="container-fluid px-5">
+      <div class="container-fluid px-md-5">
         <div class="row align-items-center">
-          <div class="col-md-2">
+          <div class="col-md-2 col-9">
             <a href="#" class="logo"> <span>@</span>maazsohail1234 </a>
           </div>
-          <div class="col-md-7 position-relative">
-            <svg
-              width="1006"
-              height="56"
-              viewBox="0 0 1006 56"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M111.405 -2.68948H31.7152C14.6698 -2.68948 0.851807 -16.5075 0.851807 -33.5529C0.851807 -50.5982 14.6698 -64.4162 31.7152 -64.4162H974.285C991.33 -64.4162 1005.15 -50.5982 1005.15 -33.5529C1005.15 -16.5075 991.33 -2.68948 974.285 -2.68948H871.723C855.839 -2.68948 842.964 10.1864 842.964 26.0696C842.964 41.9527 830.088 54.8286 814.204 54.8286H168.923C153.04 54.8286 140.164 41.9527 140.164 26.0696C140.164 10.1864 127.288 -2.68948 111.405 -2.68948Z"
-                fill="url(#paint0_linear_9_9)"
-                stroke="white"
-                stroke-opacity="0.2"
-              />
+          <div class="col-md-7 col-3 position-relative">
+            <div class="responsiveIcon d-lg-none d-flex justify-content-end">
+              <a href="javascript::void(0)" id="menu-btn" class="menu-btn">
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+            <svg width="1004" height="76" viewBox="0 0 1004 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M72.8361 -3.49753H4.16341C-19.0107 -3.49753 -37.797 -22.2838 -37.797 -45.4579C-37.797 -68.632 -19.0106 -87.4183 4.16352 -87.4183H999.658C1022.83 -87.4183 1041.62 -68.632 1041.62 -45.4579C1041.62 -22.2838 1022.83 -3.49753 999.658 -3.49753H906.402C884.808 -3.49753 867.303 14.0079 867.303 35.6019C867.303 57.196 849.797 74.7014 828.203 74.7014H151.035C129.441 74.7014 111.936 57.196 111.936 35.6019C111.936 14.0079 94.4301 -3.49753 72.8361 -3.49753Z" fill="url(#paint0_linear_2090_2)" stroke="white" stroke-opacity="0.2"/>
               <defs>
-                <linearGradient
-                  id="paint0_linear_9_9"
-                  x1="503"
-                  y1="-64.4162"
-                  x2="503"
-                  y2="54.8286"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop offset="0.565128" stop-color="#1A0D52" />
-                  <stop offset="1" stop-color="#281070" />
-                </linearGradient>
+              <linearGradient id="paint0_linear_2090_2" x1="501.911" y1="-87.4183" x2="501.911" y2="74.7014" gradientUnits="userSpaceOnUse">
+              <stop offset="0.565128" stop-color="#1A0D52"/>
+              <stop offset="1" stop-color="#281070"/>
+              </linearGradient>
               </defs>
-            </svg>
+              </svg>
             <nav class="masked-nav">
               <ul
                 class="d-flex align-items-center justify-content-center gap-5 m-0"
@@ -79,8 +67,7 @@
               </ul>
             </nav>
           </div>
-          <div
-            class="col-md-3 d-flex align-items-center gap-3 justify-content-end p-0"
+          <div class="col-md-3 d-md-flex d-none align-items-center gap-3 justify-content-end p-0"
           >
             <a href="#" class="btn">Download My CV</a>
             <a href="#" class="btn bg-brightPurple border-brightPurple"
@@ -91,7 +78,7 @@
       </div>
     </header>
     <section class="main-section bannerSection">
-      <div class="container-fluid px-5">
+      <div class="container-fluid px-md-5">
         <div class="row">
           <div class="col-md-6">
             <div class="bannerWrap">
@@ -111,12 +98,15 @@
           </div>
         </div>
       </div>
+      
     </section>
-    <section class="main-section radiusSection about-section px-5 py-0">
+    <section class="main-section radiusSection about-section px-md-5 py-0">
       <div class="container-fluid p-5 overflow-hidden">
+        <img src="assets/img/Noise.png" alt="" class="noise">
+        <span class="shade"></span>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div class="main-heading text-center">
+            <div class="main-heading mb-5 text-center">
               <h6>
                 <span class="border1"></span>
                 <span class="border2"></span>
@@ -131,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="row mt-4">
+        <div class="row ">
           <div class="col-md-4">
             <div class="serviceWrap borderMain">
               <span class="border1"></span>
@@ -400,10 +390,10 @@
       </div>
     </section>
     <section class="main-section portfolio-section pb-0">
-      <div class="container-fluid px-5">
+      <div class="container-fluid px-md-5">
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div class="main-heading text-center">
+            <div class="main-heading text-center mb-5">
               <h6>
                 <span class="border1"></span>
                 <span class="border2"></span>
@@ -419,13 +409,13 @@
           </div>
         </div>
         <ul
-          class="nav nav-tabs border-0 justify-content-center mt-4 mb-5 gap-5"
+          class="nav nav-tabs border-0 justify-content-md-center justify-content-between mb-5 gap-md-5"
           id="myTab"
           role="tablist"
         >
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link borderMain active"
+              class="nav-link borderMain "
               id="home-tab"
               data-bs-toggle="tab"
               data-bs-target="#home-tab-pane"
@@ -441,7 +431,7 @@
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link borderMain"
+              class="nav-link borderMain active"
               id="profile-tab"
               data-bs-toggle="tab"
               data-bs-target="#profile-tab-pane"
@@ -474,7 +464,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div
-            class="tab-pane fade show active"
+            class="tab-pane fade "
             id="home-tab-pane"
             role="tabpanel"
             aria-labelledby="home-tab"
@@ -593,7 +583,7 @@
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            class="tab-pane fade show active"
             id="profile-tab-pane"
             role="tabpanel"
             aria-labelledby="profile-tab"
@@ -950,11 +940,13 @@
       </div>
     </section>
 
-    <section class="main-section resumeSection px-5 py-0">
-      <div class="container-fluid p-5 overflow-hidden">
+    <section class="main-section resumeSection px-md-5 py-0">
+      <div class="container-fluid p-md-5 overflow-hidden">
+        <img src="assets/img/Noise.png" alt="" class="noise">
+
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div class="main-heading text-center">
+            <div class="main-heading text-center mb-5">
               <h6>
                 <span class="border1"></span>
                 <span class="border2"></span>
@@ -976,33 +968,31 @@
               <span class="border2"></span>
               <span class="border3"></span>
               <div class="row">
+               
                 <div class="col-md-6">
                   <h4>Education</h4>
+                  <div class="resumeInnerWrap">
+                    <small>4.9/5</small>
+                    <p>2015-2016</p>
+                    <h5>Degree Name Name Name</h5>
+                    <h6>School Name</h6>
+                  </div>
+                  <div class="resumeInnerWrap">
+                    <small>4.9/5</small>
+                    <p>2015-2016</p>
+                    <h5>Degree Name Name Name</h5>
+                    <h6>School Name</h6>
+                  </div>
+                  <div class="resumeInnerWrap">
+                    <small>4.9/5</small>
+                    <p>2015-2016</p>
+                    <h5>Degree Name Name Name</h5>
+                    <h6>School Name</h6>
+                  </div>
                 </div>
                 <div class="col-md-6">
                   <h4>Experiences</h4>
-                </div>
-                <div class="col-md-6">
-                  <div class="resumeInnerWrap">
-                    <small>4.9/5</small>
-                    <p>2015-2016</p>
-                    <h5>Degree Name Name Name</h5>
-                    <h6>School Name</h6>
-                  </div>
-                  <div class="resumeInnerWrap">
-                    <small>4.9/5</small>
-                    <p>2015-2016</p>
-                    <h5>Degree Name Name Name</h5>
-                    <h6>School Name</h6>
-                  </div>
-                  <div class="resumeInnerWrap">
-                    <small>4.9/5</small>
-                    <p>2015-2016</p>
-                    <h5>Degree Name Name Name</h5>
-                    <h6>School Name</h6>
-                  </div>
-                </div>
-                <div class="col-md-6">
+
                   <div class="resumeInnerWrap p-0">
                     <small>4.9/5</small>
                     <p>2015-2016</p>
@@ -1020,7 +1010,7 @@
             </div>
           </div>
           <div class="col-md-5">
-            <div class="resumeWrap borderMain">
+            <div class="resumeWrap clients borderMain">
               <span class="border1"></span>
               <span class="border2"></span>
               <span class="border3"></span>
@@ -1051,6 +1041,7 @@
           <span class="border1"></span>
           <span class="border2"></span>
           <span class="border3"></span>
+          <div class="overflow-hidden">
           <ul class="skillSlider">
             <li>
               <div class="svgIcon">
@@ -1646,9 +1637,11 @@
             </li>
           </ul>
         </div>
+
+        </div>
         <div class="row">
           <div class="col-md-7">
-            <div class="resumeWrap borderMain align-items-start">
+            <div class="resumeWrap borderMain align-items-start gap-0">
               <span class="border1"></span>
               <span class="border2"></span>
               <span class="border3"></span>
@@ -1665,12 +1658,12 @@
             </div>
           </div>
           <div class="col-md-5">
-            <div class="resumeWrap borderMain">
+            <div class="resumeWrap borderMain gap-0">
               <span class="border1"></span>
               <span class="border2"></span>
               <span class="border3"></span>
               <div class="row align-items-center">
-                <div class="col-md-3">
+                <div class="col-md-3 col-4">
                   <div class="svgIcon">
                     <svg
                       width="59"
@@ -1701,13 +1694,13 @@
                     </svg>
                   </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 col-8">
                   <h2>Let’s Talk</h2>
                 </div>
-                <div class="col-md-6">
+                <div class="col-6">
                   <a href="#" class="resumeBtn">MAIL</a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-6">
                   <a href="#" class="resumeBtn">WHATSAPP</a>
                 </div>
               </div>
@@ -1719,10 +1712,10 @@
     <!-- <section class="main-section recentPostSection">
 
     </section> -->
-    <footer class="px-5">
+    <footer class="px-md-5">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-7">
             <div class="footerLeftWrap">
               <h3>Let’s Contact</h3>
               <h2>with me</h2>
@@ -1734,7 +1727,7 @@
               <a href="#" class="footerBtn">Let's Talk</a>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <form action="" method="post">
               <div class="form-group">
                 <input
@@ -1783,7 +1776,7 @@
             <p class="m-0 text-center">© 2020 Linearity Gmb</p>
           </div>
           <div class="col-md-4">
-            <ul class="socialIcon d-flex justify-content-end m-0">
+            <ul class="socialIcon d-flex justify-content-md-end justify-content-center m-0">
               <li>
                 <a href="#">
                   <div class="svgIcon">

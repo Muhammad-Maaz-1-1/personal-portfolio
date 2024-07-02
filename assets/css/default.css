@@ -10,7 +10,7 @@
   background-color: var(--color-bright-purple);
 }
 .border-brightPurple {
-  border: 1px solid var(--color-bright-purple) !important;
+  border: 0.07320644216691069vw solid var(--color-bright-purple) !important;
 }
 .text-light-blue {
   color: var(--color-light-blue) !important;
@@ -20,10 +20,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Aron-Regular", sans-serif;
   background-color: var(--color-dark);
   color: #fff;
+  font-size: 1vw;
 }
 a {
   text-decoration: none;
@@ -34,15 +36,15 @@ li {
 }
 
 .btn {
-  padding: 12px 22px;
-  border: 1px solid #fff;
-  border-radius: 100px;
-  font-size: 14px;
+  padding: 0.8784773060029283vw 1.610541727672035vw;
+  border: 0.07320644216691069vw solid #fff;
+  border-radius: 7.320644216691069vw;
+  font-size: 1.0248901903367496vw;
   color: #fff;
   line-height: 1;
 }
 .main-section {
-  padding: 100px 0;
+  padding: 7.320644216691069vw 0;
 }
 p {
   font-family: "Aron-light";
@@ -54,15 +56,24 @@ h1 {
 }
 h1 span:first-child {
   font-weight: 300;
+  font-size: 2.9282576866764276vw;
+
+}
+h2{
+font-size: 2.3vw;
 }
 h3 {
-  font-size: 60px;
+  font-size: 4.392386530014641vw;
   line-height: 1;
   margin: 0;
   font-weight: bold;
 }
+h5{
+  font-size: 1.4vw;
+}
 h6 {
   color: var(--color-light-blue);
+  font-size: 1.171303074670571vw;
   font-family: "Aron-Normal";
 }
 .slick-track {
