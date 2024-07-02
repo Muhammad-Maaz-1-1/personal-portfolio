@@ -2,7 +2,7 @@ header{
     background-image: url(../img/headerbg.png);
     background-size: cover;
     position: relative;
-    padding: 4px 0;
+    padding: 9px 0;
     background-repeat: no-repeat;
 }
 
@@ -81,6 +81,9 @@ position: relative;
 .about-section {
     margin-top: -80px;
 }
+.about-section .row {
+    gap: 20px 0;
+}
 .about-section .container-fluid::Before {
     content: '';
     background: #1274FF;
@@ -101,7 +104,8 @@ position: relative;
     font-size: 13px;
     position: relative;
     display: inline-block;
-    padding: 12px 10px;
+    padding: 12px;
+    margin-bottom: 25px;
 }
 
 .main-heading h2 {
@@ -112,67 +116,13 @@ position: relative;
 
 .serviceWrap {
     text-align: center;
-    border: 1px solid #6447C0;
-    padding: 32px;
-    margin-bottom: 25px;
+    border: 2px solid #6447C0;
+    padding: 50px 32px;
+   
 position: relative;
+height: 100%;
 }
-.serviceWrap::before {
-    content: '';
-    position: absolute;
-    top: -6px;
-    left: -7px;
-    bottom: auto;
-    right: auto;
-    width: 8%;
-    height: 10%;
-    border-width: 3px 0px 0px 3px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: rotate(0deg) scale(0.7);
-}
-.serviceWrap::after {
-    content: '';
-    position: absolute;
-    top: auto;
-    left: -5px;
-    bottom: -8px;
-    right: auto;
-    width: 8%;
-    height: 10%;
-    border-width: 3px 0px 0px 3px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: rotate(-90deg) scale(0.7);
-}
-.serviceWrap span::before {
-    content: '';
-    position: absolute;
-    top: auto;
-    left: auto;
-    bottom: -6px;
-    right: -6px;
-    width: 8%;
-    height: 10%;
-    border-width: 3px 0px 0px 3px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: rotate(179deg) scale(0.7);
-}
-.serviceWrap span::after {
-    content: '';
-    position: absolute;
-    top: -6px;
-    left: auto;
-    bottom: auto;
-    right: -6px;
-    width: 8%;
-    height: 10%;
-    border-width: 3px 0px 0px 3px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: rotate(90deg) scale(0.7);
-}
+
 .serviceIcon svg {
     background: rgba(255, 255, 255, 0.1);
     padding: 17px;
@@ -186,64 +136,7 @@ position: relative;
     margin-top: 30px;
 }
 
-.main-heading h6::before {
-       content: '';
-       position: absolute;
-       top: auto;
-       left: -10px;
-       bottom: 2px;
-       right: auto;
-       width: 11%;
-       height: 42%;
-       border-width: 0px 3px 3px 0px;
-       border-style: solid;
-       border-color: #473986;
-       transform: rotate(90deg) scale(0.7);
-}
 
-.main-heading h6::after {
-       content: '';
-       position: absolute;
-       top: auto;
-       left: auto;
-       bottom: -5px;
-       right: -10px;
-       width: 13%;
-       height: 54%;
-       border-width: 0px 3px 3px 0px;
-       border-style: solid;
-       border-color: #473986;
-       transform:  scale(0.7);
-}
-
-.main-heading h6 span::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: auto;
-    bottom: auto;
-    right: -8px;
-    width: 11%;
-    height: 78%;
-    border-width: 3px 0px 0px 3px;
-    border-style: solid;
-    border-color: #473986;
-    transform: rotate(91deg) scale(0.7);
-}
-.main-heading h6 span::after {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -8px;
-    bottom: auto;
-    right: auto;
-    width: 12%;
-    height: 60%;
-    border-width: 3px 0px 0px 3px;
-    border-style: solid;
-    border-color: #473986;
-    transform: rotate(0deg) scale(0.7);
-}
 html body .nav-tabs .nav-link{
     border-radius: 0px;
     padding: 7px 30px;
@@ -268,74 +161,7 @@ backdrop-filter: blur(20px);
     transform: scale(1.2);
 
 }
-.nav-tabs .nav-link span::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: auto;
-    bottom: auto;
-    right: -3px;
-    width: 11%;
-    height: 44%;
-    border-width: 3px 0px 0px 3px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: rotate(91deg) scale(0.7);
-}
-.nav-tabs .nav-link::after {
-    content: '';
-    position: absolute;
-    top: auto;
-    left: auto;
-    bottom: -5px;
-    right: -4px;
-    width: 14%;
-    height: 45%;
-    border-width: 0px 3px 3px 0px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: scale(0.7);
-}
-.nav-tabs .nav-link::before {
-    content: '';
-    position: absolute;
-    top: auto;
-    left: -6px;
-    bottom: -2px;
-    right: auto;
-    width: 17%;
-    height: 35%;
-    border-width: 0px 3px 3px 0px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: rotate(90deg) scale(0.7);
-}
-.nav-tabs .nav-link span::after {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -4px;
-    bottom: auto;
-    right: auto;
-    width: 12%;
-    height: 34%;
-    border-width: 3px 0px 0px 3px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: rotate(0deg) scale(0.7);
-}
-html body button#profile-tab::before {
-    left: -7px;
-    bottom: 0px;
-    width: 12%;
-    height: 38%;
-}
-html body button#contact-tab::before {
-    left: -5px;
-    bottom: -1px;
-    width: 12%;
-    height: 35%;
-}
+
 .portfolioWrap{
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
 border: 1px solid rgba(255, 255, 255, 0.1);
@@ -360,70 +186,6 @@ margin-bottom: 30px;
     font-size: 14px;
 }
 /*  */
-.portfolioWrap span::before, .resumeWrap span::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: auto;
-    bottom: auto;
-    right: -3px;
-    width: 3%;
-    height: 3%;
-    border-width: 3px 0px 0px 3px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: rotate(91deg) scale(0.7);
-}
-html body .education::before {
-    left: -7px;
-    bottom: -1px;
-}
-html body .education span::before {
-    top: -1px;
-    right: -6px;
-}
-.portfolioWrap::after, .resumeWrap::after {
-    content: '';
-    position: absolute;
-    top: auto;
-    left: auto;
-    bottom: -5px;
-    right: -4px;
-    width: 3%;
-    height: 3%;
-    border-width: 0px 3px 3px 0px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: scale(0.7);
-}
-.portfolioWrap::before, .resumeWrap::before {
-    content: '';
-    position: absolute;
-    top: auto;
-    left: -4px;
-    bottom: -4px;
-    right: auto;
-    width: 3%;
-    height: 3%;
-    border-width: 0px 3px 3px 0px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: rotate(90deg) scale(0.7);
-}
-.portfolioWrap span::after, .resumeWrap span::after {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -4px;
-    bottom: auto;
-    right: auto;
-    width: 3%;
-    height: 3%;
-    border-width: 3px 0px 0px 3px;
-    border-style: solid;
-    border-color: var(--color-light-blue);
-    transform: rotate(0deg) scale(0.7);
-}
 .resumeSection .container-fluid{
     
 background: #210E60;
@@ -431,31 +193,35 @@ border-radius: 37px;
 position: relative;
 
 }
-.resumeSection .container-fluid::before{
+.resumeSection .container-fluid::before {
     content: '';
     position: absolute;
     top: 0;
-bottom: auto;
+    bottom: auto;
     left: 0;
     right: 0;
     width: 100%;
-    height: 5%;
+    height: 12%;
     background: rgba(255, 255, 255, 0.2);
-filter: blur(115.45px);
+    filter: blur(115.45px);
+    z-index: 999;
 }
-html body .resumeSection .container-fluid::after{
+html body .resumeSection .container-fluid::after {
     content: '';
     position: absolute;
-    top: 5%;
-bottom: auto;
+    top: 0;
+    bottom: auto;
     left: 0;
     right: 0;
     width: 100%;
-    height: 5%;
-background: #1274FF;
-filter: blur(115.45px);
+    height: 11%;
+    background: #1274FF;
+    filter: blur(115.45px);
 }
-
+.main-heading {
+    z-index: 999;
+    position: relative;
+}
 .resumeWrap{
     padding: 20px;
 background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
@@ -565,10 +331,290 @@ width: 100%;
     width: 100%;
     display: block;
 }
-footer .container-fluid{
-    
-background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
-border: 1px solid rgba(255, 255, 255, 0.1);
-backdrop-filter: blur(20px);
-border-radius: 31px;
+footer .container-fluid {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 31px;
+    padding: 0 49px 15px;
+}
+.footerLeftWrap {
+    padding: 75px 0;
+}
+
+footer {
+    margin-top: 158px;
+    margin-bottom: 50px;
+}
+
+footer form{background: rgb(7 8 36 / 74%);border: 1px solid rgba(255, 255, 255, 0.1);backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */border-radius: 17px;padding: 28px;margin-top: -70px;}
+
+.form-control::placeholder{
+    color:#fff;
+    opacity:1 !important;
+}
+.form-control {background: rgba(255, 255, 255, 0.18);opacity: 0.38;color:#fff;border: 1.5px solid #0A142F;border-radius: 5px;margin:15px 0;padding: 12px 15px;box-shadow: none !important;outline: none !important;}
+
+
+form .btn {
+    background: #5200FF;
+    box-shadow: 0px 24px 34px rgba(32, 70, 100, 0.1);
+    border-radius: 10px;
+    border: none;
+    padding: 16px 34px;
+}
+
+.footerLeftWrap h2 {
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffffe0;
+    background: transparent;
+    font-size: 64px;
+}
+
+.footerLeftWrap p {
+    max-width: 73%;
+    margin: 0;
+}
+
+a.footerBtn {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+    border-radius: 200px;
+    padding: 10px 27px;
+    color: #fff;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+footer .svgIcon svg {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+}
+/* border css */
+.main-heading h6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 9%;
+    height: 2px;
+    background: #473986;
+}
+.main-heading h6::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 0;
+    width: 2px;
+    height: 32%;
+    background: #473986;
+    bottom: 0;
+}
+.main-heading h6 .border1::before {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom:0;
+    right: 0;
+    width: 10%;
+    height: 2px;
+    background: #473986;
+}
+.main-heading h6 .border1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 2px;
+    height: 29%;
+    background: #473986;
+}
+
+.main-heading h6 .border2::before {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom:0;
+    right: auto;
+    width: 9%;
+    height: 2px;
+    background: #473986;
+}
+.main-heading h6 .border2::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    width: 2px;
+    height: 29%;
+    background: #473986;
+}
+
+.main-heading h6 .border3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: auto;
+    bottom:auto;
+    right: 0;
+    width: 9%;
+    height: 2px;
+    background: #473986;
+}
+.main-heading h6 .border3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: auto;
+    bottom: auto;
+    right: 0;
+    width: 2px;
+    height: 29%;
+    background: #473986;
+}
+/* border css */
+.borderMain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 15px;
+    height: 2px;
+    background: var(--color-light-blue);
+}
+.borderMain::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: -1px;
+    width: 2px;
+    height: 15px;
+    background: var(--color-light-blue);
+    bottom: 0;
+}
+.borderMain .border1::before {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom:0;
+    right: 0;
+    width: 15px;
+    height: 2px;
+    background: var(--color-light-blue);
+}
+.borderMain .border1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1px;
+    right: auto;
+    width: 2px;
+    height: 15px;
+    background: var(--color-light-blue);
+}
+
+.borderMain .border2::before {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom:0;
+    right: auto;
+    width: 15px;
+    height: 2px;
+    background: var(--color-light-blue);
+}
+.borderMain .border2::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: -1px;
+    bottom: 0;
+    right: auto;
+    width: 2px;
+    height: 15px;
+    background: var(--color-light-blue);
+}
+
+
+
+.borderMain .border3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: auto;
+    bottom:auto;
+    right: 0;
+    width: 15px;
+    height: 2px;
+    background: var(--color-light-blue);
+}
+.borderMain .border3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: auto;
+    bottom: auto;
+    right: 0;
+    width: 2px;
+    height: 15px;
+    background: var(--color-light-blue);
+}
+
+html body .nav-link .border1::after, html body .nav-link .border3::after, html body .nav-link::after, html body .nav-link .border2::after {
+    height: 8px;
+}
+
+html body .nav-link::before, html body .nav-link .border3::before, html body .nav-link .border1::before, html body .nav-link .border2::before {
+    width: 8px;
+}
+.tab-pane {
+    transform: rotateX(-90deg);
+    transition:transform 1s ease !important;
+}
+
+.tab-pane.show {
+     -webkit-transform: rotateX(0deg);
+}
+.overlay {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    transform: translateY(-600px);
+}
+.overlayBtn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 200px;
+    padding: 15px 28px 13px;
+}
+.portfolioWrap:hover .overlay{
+    transform: translateY(0px);
+
 }

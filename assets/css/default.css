@@ -1,94 +1,95 @@
 :root {
-    --color-light-blue: #00E0FF;
-    --color-dark-purple: #1A0D52;
-    --color-bright-purple: #5200FF;
-    --color-black: #000;
-    --color-darker-purple: #321F78;
-    --color-dark: #070824;
+  --color-light-blue: #00e0ff;
+  --color-dark-purple: #1a0d52;
+  --color-bright-purple: #5200ff;
+  --color-black: #000;
+  --color-darker-purple: #321f78;
+  --color-dark: #070824;
 }
-.bg-brightPurple{
-background-color: var(--color-bright-purple);
+.bg-brightPurple {
+  background-color: var(--color-bright-purple);
 }
-.border-brightPurple{
-    border: 1px solid  var(--color-bright-purple) !important;
+.border-brightPurple {
+  border: 1px solid var(--color-bright-purple) !important;
 }
-.text-light-blue{
-    color: var(--color-light-blue) !important;
+.text-light-blue {
+  color: var(--color-light-blue) !important;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-font-family: 'Aron-Regular', sans-serif;
-background-color: var(--color-dark);
-color: #fff;
+body {
+  font-family: "Aron-Regular", sans-serif;
+  background-color: var(--color-dark);
+  color: #fff;
 }
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .btn {
-    padding: 12px 22px;
-    border: 1px solid #fff;
-    border-radius: 100px;
-    font-size: 14px;
-    color: #fff;
-    line-height: 1;
+  padding: 12px 22px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
 }
-.main-section{
-    padding: 100px 0;
+.main-section {
+  padding: 100px 0;
 }
 p {
-    font-family: 'Aron-light';
+  font-family: "Aron-light";
 }
-h1{
-    color: #fff;
-    font-weight: bold;
-    text-transform: capitalize;
+h1 {
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
 }
-h1 span:first-child{
-    font-weight: 300;
+h1 span:first-child {
+  font-weight: 300;
 }
 h3 {
-    font-size: 60px;
-    line-height: 1;
-    margin: 0;
-    font-weight: bold;
+  font-size: 60px;
+  line-height: 1;
+  margin: 0;
+  font-weight: bold;
 }
-h6{
-    color: var(--color-light-blue);
-    font-family: 'Aron-Normal';
+h6 {
+  color: var(--color-light-blue);
+  font-family: "Aron-Normal";
 }
 .slick-track {
-    transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
 @font-face {
-    font-family: 'AtomicAge';
-    src: url(../font/AtomicAge-Regular.ttf);
+  font-family: "AtomicAge";
+  src: url(../font/AtomicAge-Regular.ttf);
 }
 @font-face {
-    font-family: 'Aron-Medium';
-    src: url(../font/Aron-Medium-BF6556dd3de404f.ttf);
+  font-family: "Aron-Medium";
+  src: url(../font/Aron-Medium-BF6556dd3de404f.ttf);
 }
 @font-face {
-    font-family: 'Aron-Regular';
-    src: url(../font/Aron-Regular-BF6556dd3e538a2.ttf);
+  font-family: "Aron-Regular";
+  src: url(../font/Aron-Regular-BF6556dd3e538a2.ttf);
 }
 @font-face {
-    font-family: 'Aron-Bold';
-    src: url(../font/Aron-Bold-BF6556dd3e559a6.ttf);
+  font-family: "Aron-Bold";
+  src: url(../font/Aron-Bold-BF6556dd3e559a6.ttf);
 }
 @font-face {
-    font-family: 'Aron-Normal';
-    src: url(../font/Aron-Normal-BF6556dd3e136df.ttf);
+  font-family: "Aron-Normal";
+  src: url(../font/Aron-Normal-BF6556dd3e136df.ttf);
 }
 @font-face {
-    font-family: 'Aron-light';
-    src: url(../font/Aron-Light-BF6556dd3ded53e.ttf);
+  font-family: "Aron-light";
+  src: url(../font/Aron-Light-BF6556dd3ded53e.ttf);
 }
+
