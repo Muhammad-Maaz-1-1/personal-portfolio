@@ -1032,7 +1032,7 @@ header::before, .bannerSection .container-fluid::before {
     overflow: hidden;
   }
   .bannerBg{
-    height: 96vh;
+    height: 80vh;
     object-fit: cover;
   }
   .container {
@@ -1144,7 +1144,7 @@ html body footer .svgIcon svg{
     font-size: 20px;
   }
   html body .bannerSection {
-    height: 95vh;
+    height: 80vh;
     background-position: 63%;
   }
   .main-section {
