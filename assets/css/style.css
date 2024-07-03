@@ -1050,6 +1050,9 @@ html body .letstalkSec .svgIcon, html body .resumeWrapSlider .svgIcon svg {
     width: 80px;
     height: 80px;
 }
+.resumeWrapSlider .svgIcon, .resumeWrapSlider .svgIcon svg{
+  border-radius: 0px !important;
+}
 html body .letstalkSec .svgIcon{
   display: flex;
   justify-content: center;
@@ -1146,6 +1149,9 @@ html body footer .svgIcon svg{
   html body .bannerSection {
     height: 80vh;
     background-position: 63%;
+  }
+  footer form button{
+    padding: 8px 20px;
   }
   .main-section {
     padding: 70px 0;
@@ -1280,6 +1286,7 @@ html body footer .svgIcon svg{
   .portfolioWrap figure figcaption {
     display: flex;
     flex-wrap: wrap;
+    justify-content: start !important;
     gap: 12px;
   }
   .innerResumeWrap small {
