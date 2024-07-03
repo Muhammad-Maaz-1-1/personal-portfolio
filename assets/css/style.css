@@ -655,6 +655,11 @@ footer .svgIcon svg {
     width: 4.124451vw;
     height: 4.124451vw;
     padding: 1.3vw;
+    transition: .5s;
+}
+footer .svgIcon:hover svg {
+  padding: 1vw;
+  color: #fff;
 }
 /* border css */
 .main-heading h6::before {
