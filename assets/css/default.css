@@ -122,3 +122,11 @@ h6 {
     transform: translate(0vw, 0vw) scale(1.1);
   }
 }
+
+
+::selection{background:var(--color-darker-purple); color:#fff; text-shadow:none;}
+::-webkit-scrollbar {width:0.7320644216691069vw; height:0.7320644216691069vw;}
+::-webkit-scrollbar-button:start:decrement,	::-webkit-scrollbar-button:end:increment  { display:none; }
+::-webkit-scrollbar-track-piece  {background-color:#fff; -webkit-border-radius:0px; border-left:0px   solid var(--color-darker-purple);}			
+::-webkit-scrollbar-thumb:vertical {-webkit-border-radius:0px;	background:var(--color-darker-purple); }
+
