@@ -870,7 +870,7 @@ html body .nav-link .border2::before {
     rgba(255, 255, 255, 0.04) 100%
   );
   border: 0.10980966325036604vw solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(1.4641288433382138vw);
+  backdrop-filter: blur(0.7vw);
   position: absolute;
   top: 0;
   left: 0;
@@ -1028,6 +1028,9 @@ header::before, .bannerSection .container-fluid::before {
   margin: 0 !important;
 }
 @media only screen and (max-width: 991px) {
+  .bodyActive{
+    overflow: hidden;
+  }
   .bannerBg{
     height: 96vh;
     object-fit: cover;

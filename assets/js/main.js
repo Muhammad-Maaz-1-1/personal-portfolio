@@ -41,10 +41,19 @@ $(".skillSlider").slick({
 var menuBtn = document.getElementById("menu-btn");
 var header = document.getElementsByTagName("header")[0];
 var body = document.getElementsByTagName("body")[0];
+var navLinks = document.querySelectorAll("nav ul li a");
+
 menuBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("active");
   header.classList.toggle("active");
   body.classList.toggle("bodyActive");
+});
+navLinks.forEach(function(link) {
+  link.addEventListener("click", function() {
+    menuBtn.classList.remove("active");
+    header.classList.remove("active");
+    body.classList.remove("bodyActive");
+  });
 });
 
 //
