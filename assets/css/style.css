@@ -1314,6 +1314,10 @@ html body footer .svgIcon svg{
   .svgShpe {
     width: 100px;
   }
+  .resumeWrapSlider .svgShpe{
+    position: relative;
+    left: 5px;
+  }
   .tagsWrap .tag {
     padding: 6px 23px 5px;
   }
