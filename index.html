@@ -362,6 +362,40 @@
             </button>
           </li>
         </ul>
+        <script>
+       document.addEventListener("DOMContentLoaded", function() {
+      const tabs = document.querySelectorAll(".nav-tabs li");
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+          // Remove active classes from all tabs
+          tabs.forEach(t => {
+            t.classList.remove("firstActive", "secondActive", "thirdActive");
+          });
+
+          // Add the active class to the clicked tab
+          if (index === 0) {
+            tab.classList.add("firstActive");
+          } else if (index === 1) {
+            tab.classList.add("secondActive");
+          } else if (index === 2) {
+            tab.classList.add("thirdActive");
+          }
+
+          // Remove any previous special classes from the second tab
+          const secondTab = tabs[1];
+          secondTab.classList.remove("firstliActive", "thirdliActive");
+
+          // Add special classes to the second tab based on the active tab
+          if (tabs[0].classList.contains("firstActive")) {
+            secondTab.classList.add("firstliActive");
+          } else if (tabs[2].classList.contains("thirdActive")) {
+            secondTab.classList.add("thirdliActive");
+          }
+        });
+      });
+    });
+        </script>
         <div class="tab-content" id="myTabContent">
           <div
             class="tab-pane fade "
@@ -1194,9 +1228,7 @@
               <h3>Let’s Contact</h3>
               <h2>with me</h2>
               <p>
-                Regístrate y disfruta de todas las ventajas que te ofrecemos,
-                introduce tus platos y empieza la transformación de tu
-                restaurante:
+                I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Whether you have a question or just want to say hi, feel free to reach out.
               </p>
               <a target="_blank" href="https://api.whatsapp.com/send/?phone=923237184063&text&type=phone_number&app_absent=0" class="footerBtn">Let's Talk</a>
             </div>

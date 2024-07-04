@@ -319,8 +319,10 @@ html body .nav-tabs .nav-link {
   backdrop-filter: blur(1.4641288433382138vw);
   color: #fff !important;
   transform: scale(1.2);
+  transition: transform 1s ease !important;
+  transition-delay: 1.5s !important;
 }
-.nav-tabs .nav-link:hover{transform: scale(1.1) !important;}
+.nav-tabs .nav-link:hover{transform: scale(1.1) !important;transition-delay: 0s !important;}
 
 .portfolioWrap {
   background: linear-gradient(
@@ -1029,15 +1031,46 @@ header::before, .bannerSection .container-fluid::before {
 }
 
 /* animation css end */
+
+/* tabs css start  */
+li.nav-item {
+  transition: 2s;
+}
+
+.firstActive {
+  transform: translateX(12.5vw);
+}
+
+li.nav-item.firstliActive {
+  transform: translateX(-12.5vw);
+}
+
+.thirdActive {
+  transform: translateX(-14vw);
+}
+
+.thirdliActive {
+  transform: translateX(13vw);
+}
+/* end  */
 .portfolioWrap figure figcaption .tag {
   margin: 0 !important;
 }
 @media only screen and (max-width: 991px) {
+  .nav-tabs li {
+    transform: translate(0px) !important;
+}
+  .main-heading h6 .border1::before, .main-heading h6 .border3::before, .main-heading h6 .border2::before, .main-heading h6::before{
+    height: 2px;
+  }
+  .main-heading h6::after, .main-heading h6 .border3::after, .main-heading h6 .border1::after, .main-heading h6 .border2::after{
+    width: 2px;
+  }
   .bodyActive{
     overflow: hidden;
   }
   .bannerBg{
-    height: 80vh;
+    height: 74vh;
     object-fit: cover;
   }
   .container {
@@ -1152,7 +1185,8 @@ html body footer .svgIcon svg{
     font-size: 20px;
   }
   html body .bannerSection {
-    height: 80vh;
+    height: 74vh;
+    padding-top: 45px;
     background-position: 63%;
   }
   footer form button{
@@ -1408,4 +1442,10 @@ html body footer .svgIcon svg{
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
     
+}
+
+@media (min-width: 768px) {
+  .gap-md-5 {
+      gap: 3vw !important;
+  }
 }
