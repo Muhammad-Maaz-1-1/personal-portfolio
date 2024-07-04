@@ -1056,6 +1056,12 @@ li.nav-item.firstliActive {
 .portfolioWrap figure figcaption .tag {
   margin: 0 !important;
 }
+.github svg path{
+  fill: #fff !important;
+}
+a.footerBtn::before {
+  background: #5200ff !important;
+}
 @media only screen and (max-width: 991px) {
   .nav-tabs li {
     transform: translate(0px) !important;
