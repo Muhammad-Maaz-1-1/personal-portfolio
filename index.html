@@ -1955,14 +1955,14 @@
             </div>
           </div>
           <div class="col-md-5">
-            <form action="" method="post">
+            <form id="contactForm" onsubmit="submitForm(event)">
               <div class="form-group">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Name"
-                  name=""
-                  id=""
+                  required
+                  id="name"
                 />
               </div>
               <div class="form-group">
@@ -1970,8 +1970,8 @@
                   type="text"
                   class="form-control"
                   placeholder="Email"
-                  name=""
-                  id=""
+                  required
+                  id="email"
                 />
               </div>
               <div class="form-group">
@@ -1979,8 +1979,8 @@
                   type="text"
                   class="form-control"
                   placeholder="Subject"
-                  name=""
-                  id=""
+                  required
+                  id="subject"
                 />
               </div>
               <div class="form-group">
@@ -1988,8 +1988,8 @@
                   class="form-control"
                   placeholder="Message"
                   rows="5"
-                  name=""
-                  id=""
+                  required
+                  id="message"
                 ></textarea>
               </div>
               <button>Submit</button>
@@ -2086,6 +2086,7 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

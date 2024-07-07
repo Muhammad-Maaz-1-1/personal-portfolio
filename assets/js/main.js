@@ -301,24 +301,23 @@ let text_animation = gsap.utils.toArray(".has_text_move_anim");
   });
 
 
-  // const slices = [...document.querySelectorAll(".uncover_slice")];
-  // const tl = gsap.timeline({ delay: 0 }); // Add a 2-second delay to the timeline
+  function submitForm(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
 
-  // tl.addLabel('start')
-  //   .to(".uncover_slice", 1, {
-  //     height: 0,
-  //     ease: 'power4.InOut',
-  //     stagger: { amount: 0.33 }
-  //   }, 'start')
-  //   .to(".myimg", 1.2, {
-  //     scale: 1.3,
-  //     ease: 'power4.InOut',
-  //   }, 'start');
+    // Get form data
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
 
-  // // Function to start the animation
-  // function startAnimation() {
-  //   tl.play();
-  // }
+    // Construct the WhatsApp URL
+    var whatsappURL = 'https://api.whatsapp.com/send/?phone=923237184063&text='
+      + 'Name: ' + encodeURIComponent(name) + '%0A'
+      + 'Email: ' + encodeURIComponent(email) + '%0A'
+      + 'Subject: ' + encodeURIComponent(subject) + '%0A'
+      + 'Message: ' + encodeURIComponent(message)
+      + '&type=phone_number&app_absent=0';
 
-  // // Trigger the animation when the window finishes loading
-  // window.addEventListener('load', startAnimation);
+    // Redirect to WhatsApp URL
+    window.location.href = whatsappURL;
+  }

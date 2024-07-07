@@ -596,19 +596,25 @@ footer form {
 }
 
 .form-control::placeholder {
-  color: #fff;
+  color: #fff !important;
   opacity: 1 !important;
+}
+.form-control:focus{
+  border: 0.10980966325036604vw solid #0a142f !important;
+  box-shadow: none !important;
+  background-color: rgba(255, 255, 255, 0.18) !important;
 }
 .form-control {
   background: rgba(255, 255, 255, 0.18);
   opacity: 0.38;
-  color: #fff;
+  color: #fff !important;
   border: 0.10980966325036604vw solid #0a142f;
   border-radius: 0.36603221083455345vw;
   margin: 1.0980966325036603vw 0;
   padding: 0.8784773060029283vw 1.0980966325036603vw;
   box-shadow: none !important;
   outline: none !important;
+  transition: 1s;
 }
 
 form button {
