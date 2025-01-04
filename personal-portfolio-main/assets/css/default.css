@@ -1,0 +1,132 @@
+:root {
+  --color-light-blue: #00e0ff;
+  --color-dark-purple: #1a0d52;
+  --color-bright-purple: #5200ff;
+  --color-black: #000;
+  --color-darker-purple: #321f78;
+  --color-dark: #070824;
+}
+
+.bg-brightPurple {
+  background-color: var(--color-bright-purple);
+}
+.border-brightPurple {
+  border: 0.07320644216691069vw solid var(--color-bright-purple) !important;
+}
+.text-light-blue {
+  color: var(--color-light-blue) !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Aron-Regular", sans-serif;
+  background-color: var(--color-dark);
+  color: #fff;
+  font-size: 1vw;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+
+.btn {
+  padding: 0.8784773060029283vw 1.610541727672035vw;
+  border: 0.07320644216691069vw solid #fff;
+  border-radius: 7.320644216691069vw;
+  font-size: 1.0248901903367496vw;
+  color: #fff;
+  line-height: 1;
+}
+.main-section {
+  padding: 7.320644216691069vw 0;
+}
+p {
+  font-family: "Aron-light";
+}
+h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 3vw;
+  text-transform: capitalize;
+}
+h1 span:first-child {
+  font-weight: 300;
+  font-size: 2.9282576866764276vw;
+}
+h2 {
+  font-size: 2.3vw;
+}
+h3 {
+  font-size: 4.392386530014641vw;
+  line-height: 1;
+  margin: 0;
+  font-weight: bold;
+}
+h5 {
+  font-size: 1.4vw;
+}
+h6 {
+  color: var(--color-light-blue);
+  font-size: 1.171303074670571vw;
+  font-family: "Aron-Normal";
+}
+.slick-track {
+  transition-timing-function: linear !important;
+}
+@font-face {
+  font-family: "AtomicAge";
+  src: url(../font/AtomicAge-Regular.ttf);
+}
+@font-face {
+  font-family: "Aron-Medium";
+  src: url(../font/Aron-Medium-BF6556dd3de404f.ttf);
+}
+@font-face {
+  font-family: "Aron-Regular";
+  src: url(../font/Aron-Regular-BF6556dd3e538a2.ttf);
+}
+@font-face {
+  font-family: "Aron-Bold";
+  src: url(../font/Aron-Bold-BF6556dd3e559a6.ttf);
+}
+@font-face {
+  font-family: "Aron-Normal";
+  src: url(../font/Aron-Normal-BF6556dd3e136df.ttf);
+}
+@font-face {
+  font-family: "Aron-light";
+  src: url(../font/Aron-Light-BF6556dd3ded53e.ttf);
+}
+@keyframes translate {
+  0% {
+    transform: translate(0vw, 0vw) scale(1);
+  }
+  25% {
+    transform: translate(4vw, 0vw) scale(1.1);
+  }
+  50% {
+    transform: translate(0vw, 0vw) scale(1);
+  }
+  75% {
+    transform: translate(2vw, 0vw) scale(1);
+  }
+  100% {
+    transform: translate(0vw, 0vw) scale(1.1);
+  }
+}
+
+
+::selection{background:var(--color-darker-purple); color:#fff; text-shadow:none;}
+::-webkit-scrollbar {width:0.7320644216691069vw; height:0.7320644216691069vw;}
+::-webkit-scrollbar-button:start:decrement,	::-webkit-scrollbar-button:end:increment  { display:none; }
+::-webkit-scrollbar-track-piece  {background-color:#fff; -webkit-border-radius:0px; border-left:0px   solid var(--color-darker-purple);}			
+::-webkit-scrollbar-thumb:vertical {-webkit-border-radius:0px;	background:var(--color-darker-purple); }
+
