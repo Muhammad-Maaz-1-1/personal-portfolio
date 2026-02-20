@@ -4408,9 +4408,10 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButtonGroup-grou
 div#shopify-section-sections--27708690923686__header_announcements_9jGBFp {
     display: none;
 }
-
 .header-search-wrapper {
-    min-width: auto;
+            min-width: auto;
+        padding: 0px;
+        border: none;
 }
 
 .header-search-wrapper input {
