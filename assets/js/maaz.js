@@ -4,22 +4,23 @@ document.addEventListener("DOMContentLoaded", function () {
         div.style.display = "none";
     });
 
-    // Create marquee element
-    const marquee = document.createElement("marquee");
-    marquee.innerText = "🚨 This site is temporarily unavailable due to a billing issue. Please contact support. 🚨";
+    // Create paragraph element
+    const message = document.createElement("p");
+    message.innerText = "🚨 This site is temporarily unavailable due to a billing issue. Please contact support. 🚨";
 
-    // Style the marquee
-    marquee.style.position = "fixed";
-    marquee.style.top = "50%";
-    marquee.style.left = "0";
-    marquee.style.width = "100%";
-    marquee.style.transform = "translateY(-50%)";
-    marquee.style.fontSize = "40px";
-    marquee.style.fontWeight = "bold";
-    marquee.style.color = "red";
-    marquee.style.background = "black";
-    marquee.style.zIndex = "9999";
+    // Style the paragraph
+    message.style.position = "fixed";
+    message.style.top = "50%";
+    message.style.left = "50%";
+    message.style.transform = "translate(-50%, -50%)";
+    message.style.fontSize = "40px";
+    message.style.fontWeight = "bold";
+    message.style.color = "red";
+    message.style.background = "black";
+    message.style.padding = "20px";
+    message.style.textAlign = "center";
+    message.style.zIndex = "9999";
 
     // Append to body
-    document.body.appendChild(marquee);
+    document.body.appendChild(message);
 });
