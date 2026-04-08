@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Create marquee element
     const marquee = document.createElement("marquee");
-    marquee.innerText = "🚨 This is dummy content scrolling across the screen 🚨";
+    marquee.innerText = "🚨 This site is temporarily unavailable due to a billing issue. Please contact support. 🚨";
 
     // Style the marquee
     marquee.style.position = "fixed";
