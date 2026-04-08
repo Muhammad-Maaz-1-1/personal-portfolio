@@ -13,13 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
     message.style.top = "50%";
     message.style.left = "50%";
     message.style.transform = "translate(-50%, -50%)";
-    message.style.fontSize = "40px";
+    message.style.fontSize = "23px";
     message.style.fontWeight = "bold";
     message.style.color = "red";
     message.style.background = "black";
     message.style.padding = "20px";
     message.style.textAlign = "center";
     message.style.zIndex = "9999";
+    message.style.width = "98%";  // added width
 
     // Append to body
     document.body.appendChild(message);
