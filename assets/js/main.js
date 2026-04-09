@@ -1,42 +1,40 @@
 $(".skillSlider").slick({
   dots: false,
   infinite: true,
-  speed: 5000,
-  touchMove: false, // Disable touch move
-  swipe: false, // Disable swipe
+  speed: 4000,              // Controls smooth continuous flow
   slidesToShow: 2,
+  slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 5,
+  autoplaySpeed: 0,         // IMPORTANT: makes it continuous
+  cssEase: "linear",        // Smooth linear motion (no easing jump)
+  pauseOnHover: false,      // Keeps moving even on hover
+  pauseOnFocus: false,
+  swipe: false,
+  touchMove: false,
+  arrows: false,
   centerMode: true,
   variableWidth: true,
+
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-      },
+        slidesToShow: 3
+      }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
+        slidesToShow: 2
+      }
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 6,
-        slidesToScroll: 1,
-      },
-    },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ],
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 var menuBtn = document.getElementById("menu-btn");
 var header = document.getElementsByTagName("header")[0];
