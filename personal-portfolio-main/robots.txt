@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://maazdev.netlify.app/sitemap.xml
